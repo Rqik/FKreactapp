@@ -1,0 +1,15 @@
+@import "../../assets/variables";
+.service-component{
+  width: 350px;
+   height: 200px;
+  padding: 30px;
+  background-color: $service-component-background ;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 133%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

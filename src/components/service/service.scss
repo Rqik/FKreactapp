@@ -1,0 +1,12 @@
+@import "../../assets/variables";
+.wrap-service{
+  height: 100%;
+  background-color: $sand-color;
+
+}
+.service-com{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}

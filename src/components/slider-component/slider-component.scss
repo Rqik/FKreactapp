@@ -1,0 +1,31 @@
+.slider-component{
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  line-height: 133%;
+margin-right: 40px;
+  padding: 40px 30px;
+  background-color: white;
+  max-width: 600px;
+  height: 350px;
+  max-height: 380px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+  align-items: flex-start;
+  &-name{
+    line-height: 133%;
+
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 2rem;
+
+  }
+  &-text{
+  }
+  button{
+align-self: flex-end;
+//    padding: 20px 15px;
+//    //align-content: flex-end;
+//
+  }
+}

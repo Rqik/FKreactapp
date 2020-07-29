@@ -1,0 +1,112 @@
+@import "../../assets/variables";
+
+.header {
+  background-color: $yellow-color;
+  z-index: 99;
+  font-size: $font-size;
+  transition: all 0.3s ease-in-out;
+
+  &.stickly {
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    padding: 0px 150px;
+    font-size: $font-size-lower;
+    box-shadow: 0px 0px 14px rgba(202, 194, 147, 0.5);
+    opacity: 0.9;
+    //height: 45px;
+    a {
+      opacity: 0.7;
+
+    }
+
+    ul {
+      li:last-child {
+        opacity: 0.7;
+      }
+    }
+
+    .logo-kin {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.header-list {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  padding: 15px 150px 10px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+
+}
+
+
+.header-nav {
+  transition: all 0.3s ease-in-out;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-family: Roboto, Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+
+  li {
+    display: block;
+    position: relative;
+    padding-right: 30px;
+    text-decoration: none;
+    list-style: none;
+    height: 100%;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap;
+    align-items: center;
+    :hover {
+      transition: all 0.3s ease-in-out;
+      color: $red-color;
+    }
+
+    a {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      color: $black-color;
+
+      &:after {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        content: ' ';
+        height: 1px;
+        width: 100%;
+        opacity: 0;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        &:after {
+          transition: all 0.3s ease-in-out;
+          background-color: $black-color;
+          opacity:1;
+        }
+      }
+
+
+    }
+
+  }
+
+  :last-child {
+    padding-right: 0;
+  }
+}

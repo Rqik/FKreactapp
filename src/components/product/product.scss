@@ -1,0 +1,32 @@
+@import "../../assets/variables";
+.product{
+  :before{
+
+  }
+  .product_components{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.wrapper +.sand {
+  position: relative;
+  &:before{
+    content: '';
+    max-width: 100vw;
+    position: absolute;
+    left: 0;
+    top: -150px;
+    right: 0;
+    border-left: 0px solid transparent;
+    border-right: 98vw solid transparent;
+    border-bottom: 150px solid $sand-color;
+    padding: 0;
+    margin: 0;
+  }
+
+  background-color: $sand-color;
+  margin-top: 10rem;
+  padding-top: 0;
+
+}

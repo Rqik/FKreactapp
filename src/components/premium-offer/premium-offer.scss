@@ -1,0 +1,32 @@
+@import "../../assets/variables";
+
+.premium-offer {
+  border-radius: 10px;
+  background-color: $black-color;
+  width: 100%;
+  height: 400px;
+  font-family: Roboto, sans-serif;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &_label {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: $service-component-background;
+  }
+
+  &_text {
+    width: 100%;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+}

@@ -1,0 +1,58 @@
+@import "../../assets/variables";
+
+.button {
+  font-family: Roboto, Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  //border: 1px solid #bbb;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 20px;
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+
+    box-shadow: 0px 0px 10px rgba(212, 212, 212, 0.8);
+  }
+
+  &-first {
+    background-color: #99E6FF;
+  }
+
+  &-secondary {
+    background-color: #FFE000;
+  }
+
+  &-confirm {
+    border: 1px solid #56DC7E;
+    background-color: #56DC7E;
+    color: $white;
+  }
+
+  &-premium {
+
+    border: 2px solid $service-component-background;
+    border-radius: 10px;
+    width: 200px;
+    padding: 0px 0px;
+    height: 50px;
+    margin: 0;
+
+    background-color: $service-component-background;
+    color: $black-color;
+
+
+  }
+}
+
+//99E6FF
+//FFF5AD
