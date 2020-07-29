@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FKreactapp/static/css/main.1c5d98db.chunk.css",
+    "main.js": "/FKreactapp/static/js/main.0602ba6e.chunk.js",
+    "main.js.map": "/FKreactapp/static/js/main.0602ba6e.chunk.js.map",
+    "runtime-main.js": "/FKreactapp/static/js/runtime-main.db6f6549.js",
+    "runtime-main.js.map": "/FKreactapp/static/js/runtime-main.db6f6549.js.map",
+    "static/js/2.91b2a7fb.chunk.js": "/FKreactapp/static/js/2.91b2a7fb.chunk.js",
+    "static/js/2.91b2a7fb.chunk.js.map": "/FKreactapp/static/js/2.91b2a7fb.chunk.js.map",
+    "index.html": "/FKreactapp/index.html",
+    "precache-manifest.0fd43e16f8aa6ed62ac42ce9d23746a8.js": "/FKreactapp/precache-manifest.0fd43e16f8aa6ed62ac42ce9d23746a8.js",
+    "service-worker.js": "/FKreactapp/service-worker.js",
+    "static/css/main.1c5d98db.chunk.css.map": "/FKreactapp/static/css/main.1c5d98db.chunk.css.map",
+    "static/js/2.91b2a7fb.chunk.js.LICENSE.txt": "/FKreactapp/static/js/2.91b2a7fb.chunk.js.LICENSE.txt",
+    "static/media/Macbook.png": "/FKreactapp/static/media/Macbook.cb99d66e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db6f6549.js",
+    "static/js/2.91b2a7fb.chunk.js",
+    "static/css/main.1c5d98db.chunk.css",
+    "static/js/main.0602ba6e.chunk.js"
+  ]
+}
