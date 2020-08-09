@@ -18,7 +18,11 @@
     //height: 45px;
     a {
       opacity: 0.7;
-
+      &:hover{
+        background-color: $black-color;
+        color: white;
+      }
+      border-radius: 4px;
     }
 
     ul {
@@ -30,6 +34,8 @@
     .logo-kin {
       a {
         opacity: 1;
+        background-color: transparent;
+
       }
     }
   }
@@ -63,13 +69,14 @@
   li {
     display: block;
     position: relative;
-    padding-right: 30px;
+    // margin: 0 5px;
     text-decoration: none;
     list-style: none;
     height: 100%;
     transition: color 0.3s ease-in-out;
     white-space: nowrap;
     align-items: center;
+
     :hover {
       transition: all 0.3s ease-in-out;
       color: $red-color;
@@ -79,34 +86,23 @@
       position: relative;
       transition: all 0.3s ease-in-out;
       color: $black-color;
-
-      &:after {
-        transition: all 0.3s ease-in-out;
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        content: ' ';
-        height: 1px;
-        width: 100%;
-        opacity: 0;
-      }
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      padding: 10px;
+      margin-right: 20px;
 
       &:hover {
+        z-index: 2;
+        background-color: rgba(255, 255, 255, 0.38);
+        border-radius: 4px;
         opacity: 1;
 
-        &:after {
-          transition: all 0.3s ease-in-out;
-          background-color: $black-color;
-          opacity:1;
-        }
       }
-
-
     }
-
   }
 
   :last-child {
-    padding-right: 0;
+
   }
 }
