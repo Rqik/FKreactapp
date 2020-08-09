@@ -18,7 +18,7 @@ import ContactPages from '../pages/contact-pages'
 
 const App = () => {
 
-    React.useEffect(()=>{})
+    React.useEffect(()=>{},[])
 
     return (
         <Fragment>

@@ -4,9 +4,10 @@
 @import "assets/variables";
 //@import "assets/skeleton.css";
 
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Montserrat', 'Roboto', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,17 +15,90 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-color: $black-color ;
+  color: $black-color;
   background-color: $white
 }
-ul{
+
+ul {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+.button {
+  font-family: Roboto, Montserrat, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  //border: 1px solid #bbb;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-right: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0px 0px 8px rgba(212, 212, 212, 0.8);
+  }
+
+  &-first {
+    background-color: #99E6FF;
+  }
+
+  &-secondary {
+    background-color: #FFE000;
+  }
+
+
+
+  &-confirm {
+    border: 1px solid #56DC7E;
+    background-color: #56DC7E;
+    color: $white;
+  }
+
+  &-premium {
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid $service-component-background;
+    margin: 0;
+    background-color: $service-component-background;
+    color: $black-color;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+      box-shadow: 0px 0px 8px $service-component-background;
+    }
+
+    &_f {
+      border-radius: 4px;
+      border: 2px solid $service-component-background;
+      color: $service-component-background;
+      vertical-align: middle;
+      box-sizing: border-box;
+
+      &:hover {
+        box-shadow: 0px 0px 8px $service-component-background;
+      }
+    }
+
+  }
 }

@@ -31,11 +31,11 @@ table {
     tr {
       td {
         &:first-child {
-          border-radius: 22px 0 0 0;
+          border-radius: 8px 0 0 0;
         }
 
         &:last-child {
-          border-radius: 0 22px 0 0;
+          border-radius: 0 8px 0 0;
         }
 
         padding-bottom: 15px;
@@ -57,7 +57,7 @@ table {
       }
 
       &:last-child {
-        border-radius: 0 0 22px 22px;
+        border-radius: 0 0 8px 8px;
       }
 
 
@@ -79,11 +79,11 @@ table {
         border-bottom: none;
 
         &:first-child {
-          border-radius: 0 0 0 22px;
+          border-radius: 0 0 0 8px;
         }
 
         &:last-child {
-          border-radius: 0 0 22px 0;
+          border-radius: 0 0 8px 0;
         }
       }
     }

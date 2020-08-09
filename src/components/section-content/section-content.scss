@@ -1,0 +1,57 @@
+@import "../../assets/variables.scss";
+
+section {
+  padding: 50px 80px;
+  border-radius: 12px;
+  border: 2px solid $sand-color;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 18px;
+
+  .section_title {
+    line-height: 2.3rem;
+    font-family: "Montserrat", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: $font-size-label;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-content {
+    margin: 2rem 0;
+    padding: 20px 40px;
+    background-color: #fffcf1;
+    border-radius: 8px;
+    width: 49%;
+    color: $black-color;
+
+    &_title {
+      font-size: calc(#{$font-size-label*0.6});
+      font-weight: 700;
+      color: #761924;
+      margin-bottom: 0.5rem;
+    }
+
+    &_text {
+      font-family: Roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.3em;
+      ul {
+        width: 100%;
+        padding: 0;
+        letter-spacing:  0.1rem;
+        font-weight: 500;
+        li{
+          margin-bottom: 6px;
+        }
+      }
+      a {
+        color: #141719;
+        font-weight: 500;
+        line-height: 1.3em;
+      }
+    }
+  }
+}

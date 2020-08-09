@@ -27,7 +27,7 @@ const Footer = () => {
 
                     <div className='contact-phone'>
                         Телефон
-                        <a href="tel:+78722560570">+7(8722) 560-570</a>
+                        <a href="tel:+78722560570">+7 (8722) 560-570</a>
                     </div>
 
                 </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                     <li><Link to="">Другие сайты 1С</Link></li>
                 </ul>
             </div>
-            <div className='footer-contact'>
+            <div className='contact-address'>
                 <div>Контакты</div>
 
                 <div className='address'>Россия <br/>
