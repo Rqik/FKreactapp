@@ -1,5 +1,16 @@
 @import "variables";
 
+@mixin border-shadow{
+  box-shadow: 0 0  2px $border-shadow-color ;
+}
+
+@mixin title-block{
+  text-transform: none;
+  font-weight: bold;
+  font-size: $font-size-lower;
+}
+
+
 @mixin button($color: green) {
   height: 60px;
   min-width: 200px;
@@ -37,4 +48,5 @@
   height: 100%;
   width: 100%;
   padding: 50px 150px 2rem;
+  position: relative;
 }

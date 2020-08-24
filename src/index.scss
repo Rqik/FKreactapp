@@ -35,7 +35,7 @@ code {
 
 .button {
   font-family: Roboto, Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: $font-size;
   text-transform: uppercase;
   padding: 0 40px;
   font-weight: 600;
@@ -67,12 +67,34 @@ code {
   }
 
 
-
   &-confirm {
     border: 1px solid #56DC7E;
     background-color: #56DC7E;
     color: $white;
   }
+
+  &-push, &-push_clear {
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    background-color: $blue-color;
+    margin: 5px auto;
+    color: $white;
+padding: 0;
+    &_clear {
+      color: $red-color;
+      background-color: transparent;
+
+      &:hover {
+        box-shadow: none;
+        background-color: $red-color-secondary;
+      }
+    }
+  }
+
 
   &-premium {
     box-sizing: border-box;
@@ -102,3 +124,23 @@ code {
 
   }
 }
+
+.list-ul {
+  margin-top: 0;
+  padding-top: 0;
+
+  :before {
+    content: '✓';
+    font-weight: 700;
+    vertical-align: middle;
+    color: $green-color;
+  }
+
+  li {
+    font-weight: normal;
+    line-height: 1.8rem;
+    vertical-align: middle;
+  }
+}
+
+

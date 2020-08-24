@@ -1,6 +1,92 @@
 @import "../../assets/variables";
 
+.search-field {
+  background-color: $yellow-color;
+  position: absolute;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  width: 0;
+  height: 100%;
+  z-index: -100;
+
+  svg {
+    transition: all .1s ease-in-out;
+    top: 0;
+    right: 0;
+  }
+
+}
+
+.search-field-show {
+  transition: all 0.3s ease-in-out;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 5001;
+
+  svg {
+    margin-left: 150px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .form-input-search {
+    width: 70%;
+  }
+}
+
+.form-input-search {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 55px;
+
+  .input-search ::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .input-search {
+    border: none;
+    width: 100%;
+    margin: 0 0 0 30px;
+    font-size: $font-size-label;
+    padding: 5px;
+
+    &-submit {
+      //background-color: $border-color;
+      font-family: "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      color: $secondary-text;
+      font-weight: 500;
+      font-size: $font-size;
+      margin-left: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: 120px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 15px;
+      border: none;
+      height: 100%;
+    }
+  }
+}
+
+
 .header {
+  overflow: hidden;
+  max-width: 100vw;
+  position: relative;
   background-color: $yellow-color;
   z-index: 99;
   font-size: $font-size;
@@ -11,17 +97,23 @@
     background-color: white;
     width: 100%;
     position: fixed;
-    padding: 0px 150px;
+    padding: 0 150px;
     font-size: $font-size-lower;
-    box-shadow: 0px 0px 14px rgba(202, 194, 147, 0.5);
+    box-shadow: 0 0 14px rgba(202, 194, 147, 0.5);
     opacity: 0.9;
-    //height: 45px;
+
+    .search-field {
+      background-color: white;
+    }
+
     a {
       opacity: 0.7;
-      &:hover{
+
+      &:hover {
         background-color: $black-color;
         color: white;
       }
+
       border-radius: 4px;
     }
 
@@ -44,7 +136,7 @@
 
 .header-list {
   margin: 0 auto;
-
+  max-height: 90px;
   display: flex;
   flex-direction: row;
   padding: 15px 150px 10px;
@@ -57,7 +149,7 @@
 
 .header-nav {
   transition: all 0.3s ease-in-out;
-
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: row;

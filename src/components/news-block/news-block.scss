@@ -1,0 +1,61 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+.news-block{
+margin: 0 0 0 14px;
+  display: block;
+  padding:   1rem;
+  box-sizing: border-box;
+  max-width: 300px;
+  top: 0;
+  border-radius: 8px;
+  right: 0;
+  height: 100%;
+  @include border-shadow;
+  //border: 2px solid rgba(177, 177, 177, 0.34);
+  .news {
+    &-all{
+      border-radius: 4px;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 0px 0px  4px $green-color ;
+
+      }
+    }
+    &-title {
+      @include title-block;
+
+    }
+
+    &-list {
+      padding: 0;
+      &-item {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+        font-weight: normal;
+        font-size: 14px;
+        margin: 0;
+        border-top: 1px solid #bbbbbb;
+
+        .data-span{
+        font-size: $font-size-lower;
+        line-height: 2rem;
+        color:$border-color ;
+          transition: all 0.3s ease-in-out;
+
+      }
+        &:hover{
+
+          cursor: pointer;
+          color: $green-color;
+          .data-span{
+            color: $green-color;
+          }
+          border-top: 1px solid $green-color;
+
+        }
+      }
+    }
+  }
+}
