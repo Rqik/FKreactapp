@@ -69,38 +69,45 @@ input {
   padding: 23px 0;
   padding-left: 22px;
   margin-right: 22px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #141719;
   transition: 0.3s ease;
   border-radius: 8px;
 
-  &::placeholder {
-    transition: 0.3s ease;
-    font-weight: 600;
-    color: #141719;
-    opacity: 0;
-  }
-
-  &:focus::placeholder {
-    opacity: 0.6;
-  }
-
   &:focus {
     border: 1px solid transparent;
     border-left: 5px solid #FFE000;
     background-color: #fff;
   }
+}
 
-  &:focus ~ span, &:not(:placeholder-shown) ~ span {
-    top: 5px;
-    left: 22px;
-    font-size: 12px;
-    opacity: 0.7;
+.form-contact {
+  input {
 
+    &::placeholder {
+      transition: 0.3s ease;
+      font-weight: 600;
+      color: #141719;
+      opacity: 0;
+    }
+
+    &:focus::placeholder {
+      opacity: 0.6;
+    }
+
+
+    &:focus ~ span, &:not(:placeholder-shown) ~ span {
+      top: 5px;
+      left: 22px;
+      font-size: 12px;
+      opacity: 0.7;
+
+    }
   }
 }
+
 
 input, button {
   outline: none;

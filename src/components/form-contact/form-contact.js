@@ -18,7 +18,7 @@ const FormContact = () => {
                 вам!
             </div>
 
-            <form action="#" method="post">
+            <form className='form-contact' action="#" method="post">
 
 
                 <label htmlFor="contactName">

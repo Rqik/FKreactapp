@@ -22,7 +22,7 @@ const App = () => {
 
     return (
         <Fragment>
-            <Header/>
+            <Header />
             <Switch>
                 <Route path='/'  exact component={HomePage}/>
                 <Route path='/product' component={ProductPage}/>

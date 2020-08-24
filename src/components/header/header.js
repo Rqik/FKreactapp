@@ -1,38 +1,38 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import SVG from '../svg-img/svg'
 import './header.scss'
 
 
 const Header = () => {
+    const [searchPanel, setSearchPanel] = useState(false)
 
     const scrollHeader = () => {
 
-        let scrollTop = window.scrollY;
-        const headerWrapper = document.querySelector(".header");
+        let scrollTop = window.scrollY
+        const headerWrapper = document.querySelector(".header")
 
         if (scrollTop > 1) {
-            headerWrapper.classList.add("stickly");
+            headerWrapper.classList.add("stickly")
         } else {
-            headerWrapper.classList.remove("stickly");
+            headerWrapper.classList.remove("stickly")
         }
     }
 
-    React.useEffect(() => {
-        document.addEventListener("scroll", scrollHeader);
-        console.log('scroll')
+    useEffect(() => {
+        document.addEventListener("scroll", scrollHeader)
     }, [])
 
 
     return (
         <div className='header  header-list'>
 
+
             <div className='logo-kin'>
                 <Link to='/'>
                     <SVG/>
                 </Link>
             </div>
-
             <ul className='header-nav'>
                 <li>
                     <Link to='/company'>О компании</Link>
@@ -55,10 +55,29 @@ const Header = () => {
                 <li>
                     <Link to='fresh'>1С Фреш</Link>
                 </li>
-                <li>
-                    <SVG name='search'/>
+                <li >
+                    <SVG onClick={() => {
+                        setSearchPanel(!searchPanel)
+                    }}
+                        name='search'/>
                 </li>
             </ul>
+
+            <div
+                className={searchPanel? 'search-field search-field-show': 'search-field'} >
+                <SVG onClick={() => {
+                    setSearchPanel(false)
+                }}
+                     name='search'/>
+
+                <form className='form-input-search' action="">
+                    <input className='input-search' type="search" placeholder="Поиск..."/>
+                    <input type='submit' className='input-search-submit' value='найти'/>
+                </form>
+
+            </div>
+
+
         </div>
     )
 }

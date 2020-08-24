@@ -1,4 +1,5 @@
 import React from 'react'
+import SVG from '../svg-img/svg'
 import './service-component.scss'
 
 const ServiceComponent = ({title}) => {
@@ -9,7 +10,7 @@ const ServiceComponent = ({title}) => {
                 {title}
             </div>
             <div className='service-component__text'></div>
-
+            <SVG name='next'/>
         </div>
     )
 }

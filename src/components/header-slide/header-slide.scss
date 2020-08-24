@@ -1,10 +1,11 @@
 @import "../../assets/mixins";
 
 .wrapper {
+  &-content{
+    display: flex;
+  }
 
   @include wrapper;
-
-
   .header-slide {
 
     &-name {
