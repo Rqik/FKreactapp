@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FKreactapp/precache-manifest.0fd43e16f8aa6ed62ac42ce9d23746a8.js"
+  "/FKreactapp/precache-manifest.fa06ad4a87eff41d871670af43c84ad1.js"
 );
 
 self.addEventListener('message', (event) => {
