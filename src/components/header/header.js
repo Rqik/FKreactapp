@@ -33,6 +33,12 @@ const Header = () => {
                     <SVG/>
                 </Link>
             </div>
+            <button className='menu_button'>
+                        <SVG name='exit'/>
+                        <SVG name='menu'/>
+
+
+            </button>
             <ul className='header-nav'>
                 <li>
                     <Link to='/company'>О компании</Link>
@@ -55,24 +61,26 @@ const Header = () => {
                 <li>
                     <Link to='fresh'>1С Фреш</Link>
                 </li>
-                <li >
+                <li>
                     <SVG onClick={() => {
                         setSearchPanel(!searchPanel)
                     }}
-                        name='search'/>
+                         name='search'/>
                 </li>
             </ul>
 
             <div
-                className={searchPanel? 'search-field search-field-show': 'search-field'} >
+                className={searchPanel ? 'search-field search-field-show' : 'search-field'}>
                 <SVG onClick={() => {
                     setSearchPanel(false)
                 }}
                      name='search'/>
 
                 <form className='form-input-search' action="">
-                    <input className='input-search' type="search" placeholder="Поиск..."/>
-                    <input type='submit' className='input-search-submit' value='найти'/>
+                    <input className='input-search' type="search"
+                           placeholder="Поиск..."/>
+                    <input type='submit' className='input-search-submit'
+                           value='найти'/>
                 </form>
 
             </div>
