@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b9e23f02048715f01c1d1fc1df1d27f",
+    "revision": "7fb83ef0ac8f24004b98e3aa9fd862dd",
     "url": "/FKreactapp/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FKreactapp/static/css/2.30998e96.chunk.css"
   },
   {
-    "revision": "97fd513a16c538b24822",
-    "url": "/FKreactapp/static/css/main.2b517ba9.chunk.css"
+    "revision": "7c642fa8e0ffd3d51adc",
+    "url": "/FKreactapp/static/css/main.50eca33c.chunk.css"
   },
   {
     "revision": "0401fdd2d152a2040eed",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FKreactapp/static/js/2.93f16da6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "97fd513a16c538b24822",
-    "url": "/FKreactapp/static/js/main.9bc6ffea.chunk.js"
+    "revision": "7c642fa8e0ffd3d51adc",
+    "url": "/FKreactapp/static/js/main.eb032250.chunk.js"
   },
   {
     "revision": "98f90800ada30db24868",

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/FKreactapp/static/css/main.2b517ba9.chunk.css",
-    "main.js": "/FKreactapp/static/js/main.9bc6ffea.chunk.js",
-    "main.js.map": "/FKreactapp/static/js/main.9bc6ffea.chunk.js.map",
+    "main.css": "/FKreactapp/static/css/main.50eca33c.chunk.css",
+    "main.js": "/FKreactapp/static/js/main.eb032250.chunk.js",
+    "main.js.map": "/FKreactapp/static/js/main.eb032250.chunk.js.map",
     "runtime-main.js": "/FKreactapp/static/js/runtime-main.db6f6549.js",
     "runtime-main.js.map": "/FKreactapp/static/js/runtime-main.db6f6549.js.map",
     "static/css/2.30998e96.chunk.css": "/FKreactapp/static/css/2.30998e96.chunk.css",
     "static/js/2.93f16da6.chunk.js": "/FKreactapp/static/js/2.93f16da6.chunk.js",
     "static/js/2.93f16da6.chunk.js.map": "/FKreactapp/static/js/2.93f16da6.chunk.js.map",
     "index.html": "/FKreactapp/index.html",
-    "precache-manifest.fa06ad4a87eff41d871670af43c84ad1.js": "/FKreactapp/precache-manifest.fa06ad4a87eff41d871670af43c84ad1.js",
+    "precache-manifest.49342a0dc52397c902722f68ac739585.js": "/FKreactapp/precache-manifest.49342a0dc52397c902722f68ac739585.js",
     "service-worker.js": "/FKreactapp/service-worker.js",
     "static/css/2.30998e96.chunk.css.map": "/FKreactapp/static/css/2.30998e96.chunk.css.map",
-    "static/css/main.2b517ba9.chunk.css.map": "/FKreactapp/static/css/main.2b517ba9.chunk.css.map",
+    "static/css/main.50eca33c.chunk.css.map": "/FKreactapp/static/css/main.50eca33c.chunk.css.map",
     "static/js/2.93f16da6.chunk.js.LICENSE.txt": "/FKreactapp/static/js/2.93f16da6.chunk.js.LICENSE.txt",
     "static/media/Macbook.png": "/FKreactapp/static/media/Macbook.cb99d66e.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.db6f6549.js",
     "static/css/2.30998e96.chunk.css",
     "static/js/2.93f16da6.chunk.js",
-    "static/css/main.2b517ba9.chunk.css",
-    "static/js/main.9bc6ffea.chunk.js"
+    "static/css/main.50eca33c.chunk.css",
+    "static/js/main.eb032250.chunk.js"
   ]
 }
