@@ -1,8 +1,4 @@
 import {
-    ProgrammContextProvider,
-    ProgrammContextConsumer} from './programm-context'
+   ProgramContext} from './program-context'
 
-export  {
-    ProgrammContextProvider,
-    ProgrammContextConsumer
-}
+export  {ProgramContext}

@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionContent from '../section-content'
-import HashTag from '../hash-tag'
+import SectionContent from '../components/section-content'
+import HashTag from '../components/hash-tag'
 
 const ContactPages = () => {
     return (

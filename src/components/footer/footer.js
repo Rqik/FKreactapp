@@ -11,7 +11,7 @@ const Footer = () => {
 
                     <div className='contact-log'>
                         <div className="rect">
-                            <SVG name='rectangel'></SVG>
+                            <SVG name='rect_angel'/>
                         </div>
                         <div className='text-logo-1c'>
                             <SVG/>

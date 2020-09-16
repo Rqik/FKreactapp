@@ -1,7 +1,7 @@
 import React from 'react'
-import PremiumOffer from '../premium-offer'
-import NewsBlock from '../news-block'
-import HashTag from '../hash-tag'
+import PremiumOffer from '../components/premium-offer'
+import NewsBlock from '../components/news-block'
+import HashTag from '../components/hash-tag'
 
 const CompanyPages = () => {
     return (
@@ -32,14 +32,14 @@ const CompanyPages = () => {
                             <p><a href="tel:+79894471616">+7(989)
                                 447-16-16</a>
                             </p>
-                            <p>
 
-                                <div className='graphic'>Режим работы: 9:00
-                                    - 18:00
-                                    (понедельник - пятница).
-                                    Выходной: суббота, воскресенье
-                                </div>
-                            </p>
+
+                            <div className='graphic'><p>Режим работы: 9:00
+                                - 18:00
+                                (понедельник - пятница).
+                                Выходной: суббота, воскресенье </p>
+                            </div>
+
                             Выбирая нас, Вы получаете:
                             <ul className='list-ul'>
                                 <li> консультации по подбору программных
@@ -104,6 +104,6 @@ const CompanyPages = () => {
             <NewsBlock/>
         </div>
 
-)
+    )
 }
 export default CompanyPages

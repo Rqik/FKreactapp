@@ -1,19 +1,20 @@
 import React, {Fragment} from 'react'
 
+
 const ProductPage = ({product}) => {
-
     const {name, text} = product
-
     return (
-        <Fragment>
+            <Fragment>
             <span>
-
                 {name}
             </span>
-            <span>
+                <span>
                 {text}
             </span>
-        </Fragment>
+            </Fragment>
     )
 }
+
+
+
 export default ProductPage

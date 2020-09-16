@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ErrorIndecator from '../error-indecator'
+import ErrorIndicator from '../error-indicator'
 
 export default class ErrorBoundary extends Component {
 
@@ -14,7 +14,7 @@ export default class ErrorBoundary extends Component {
     render() {
         if (this.state.hasError) {
             return (
-                <ErrorIndecator/>
+                <ErrorIndicator/>
             )
         }
         return this.props.children

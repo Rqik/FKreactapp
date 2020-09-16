@@ -1,14 +1,13 @@
 import React from 'react'
 import './slider-component.scss'
+import ContentLoader from 'react-content-loader'
 
-const SliderComponent = ({component, key}) => {
+const SliderComponent = ({component}) => {
 
     const {title, text} = component
 
-
     return (
-
-        <div className=' slider-component'>
+    <div className=' slider-component'>
             <div>
                 <div className='slider-component-name'>
                     {title}

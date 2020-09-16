@@ -3,25 +3,26 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
 
 import App from './components/app'
-import ErrorBoundry from './components/error-boundry'
-import ProgrammStoreService from './data-base/data-base'
+import ErrorBoundary from './components/error-boundary'
+import ProgramStoreService from './store/data-base/data-base'
 
-import {ProgrammContextProvider} from './components/program-context'
+import {ProgramContext} from './program-context'
 import './index.scss';
 
-import store from './store'
-import {BrowserRouter as Router} from 'react-router-dom'
+import store from './store/store'
+import {BrowserRouter} from 'react-router-dom'
 
-const programmStoreService = new ProgrammStoreService()
+const programStoreService = new ProgramStoreService()
 
 ReactDOM.render(
     <Provider store={store}>
-        <ErrorBoundry>
-            <ProgrammContextProvider value={programmStoreService}>
-                <Router>
+        <ErrorBoundary>
+            <ProgramContext.Provider value={programStoreService}>
+                <BrowserRouter>
                     <App/>
-                </Router>
-            </ProgrammContextProvider>
-        </ErrorBoundry>
+                </BrowserRouter>
+            </ProgramContext.Provider>
+        </ErrorBoundary>
     </Provider>,
-    document.getElementById('root'))
+    document.getElementById('root')
+)

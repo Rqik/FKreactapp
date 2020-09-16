@@ -1,23 +1,23 @@
 import React from 'react'
-import {ProgrammContextConsumer} from '../program-context'
+import {ProgramContext} from '../program-context'
 
-const widthProgrammstoreService = () => (Wrapper) => {
+const widthProgramStoreService = () => (Wrapper) => {
     return (props) => {
         return (
-            <ProgrammContextConsumer>
+            <ProgramContext.Consumer>
                 {
-                    (programmStoreService) => {
+                    (programStoreService) => {
                         return (
                             <Wrapper
                                 {...props}
-                                programmStoreService={programmStoreService}/>
+                                programmStoreService={programStoreService}/>
                         )
                     }
 
                 }
-            </ProgrammContextConsumer>
+            </ProgramContext.Consumer>
         )
     }
 }
 
-export default widthProgrammstoreService
+export default widthProgramStoreService

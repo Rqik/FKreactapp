@@ -5,7 +5,7 @@ import WorkPages from './work-pages'
 import EquipmentPages from './equipment-pages'
 import ServicePages from './service-pages'
 import CompanyPages from './company-pages'
-import ExpiriencePages from './expirience-pages'
+import ExperiencePages from './experience-pages'
 
 export {
     HomePage,
@@ -15,5 +15,5 @@ export {
     EquipmentPages,
     ServicePages,
     CompanyPages,
-    ExpiriencePages
+    ExperiencePages
 }

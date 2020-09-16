@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './form.scss'
 
 const FormContact = () => {
     // [phone, setPhone] = useState(2)
-
 
     return (
 

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './service.scss'
 import ServiceComponent from '../service-component'
-import {connect} from 'react-redux'
+import {connect, useSelector} from 'react-redux'
 
-const Service = ({service}) => {
+const Service = () => {
+
+    const service = useSelector(({service})=> service)
     return (
         <div className='wrapper wrap-service'>
             <div className="service">
@@ -21,9 +23,5 @@ const Service = ({service}) => {
         </div>
     )
 }
-const mapStateToProps = ({service}) => {
-    return {
-        service
-    }
-}
-export default connect(mapStateToProps)(Service)
+
+export default (Service)

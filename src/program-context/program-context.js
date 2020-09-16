@@ -1,12 +1,5 @@
 import React from 'react'
 
-const
-    {
-        Provider: ProgramContextProvider,
-        Consumer: ProgramContextConsumer
-    } = React.createContext()
+const ProgramContext = React.createContext()
 
-export  {
-    ProgramContextProvider,
-    ProgramContextConsumer
-}
+export  {ProgramContext}

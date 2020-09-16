@@ -11,9 +11,9 @@ const HashTag = () => {
     return (
         <Fragment>
             <ul className='hash-tags'>
-                {hashItems.map((el) => {
-                    return (<li className=' button-hash_tag'>
-                        {el[0].toUpperCase()+el.slice(1)}
+                {hashItems.map((el,index) => {
+                    return (<li key={el+'_'+index} className=' button-hash_tag'>
+                        {el[0].toUpperCase() + el.slice(1)}
                     </li>)
                 })}
             </ul>

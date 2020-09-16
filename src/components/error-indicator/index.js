@@ -1,2 +1,2 @@
-import ErrorIndecator from './error-indecator'
-export default ErrorIndecator
+import ErrorIndicator from './error-indicator'
+export default ErrorIndicator

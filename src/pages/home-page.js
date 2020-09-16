@@ -1,10 +1,9 @@
 import React , {Fragment} from 'react'
 
-import Product from '../product'
-import Service from '../service'
-import FormContact from '../form-contact'
-import Footer from '../footer'
-import HeaderSlide from '../header-slide'
+import Product from '../components/product'
+import Service from '../components/service'
+import FormContact from '../components/form-contact'
+import HeaderSlide from '../components/header-slide'
 
 const  HomePage = () => {
     return (

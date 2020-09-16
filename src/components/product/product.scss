@@ -10,7 +10,7 @@
     width: 145px;
     margin: 0;
     height: 100%;
-    background: linear-gradient(270deg, #F9F3C8 0%, rgba(255, 250, 217, 0) 100%);
+    background: linear-gradient(270deg, $sand-color 0%, rgba(253, 241, 210, 0) 100%);
     &:after{
       display: none;
     }
