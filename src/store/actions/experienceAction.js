@@ -1,39 +1,36 @@
 import {
     EXP_ERROR,
     EXP_LOADED,
-    EXP_START,
-    PRODUCT_ERROR,
-    PRODUCT_LOADED,
-    PRODUCT_START,
+    EXP_START
 } from '../action-types'
 import axios from '../../axios/API'
 
-export function productDataLoadAction() {
+export function experienceDataLoadAction() {
     return async dispatch => {
         try {
-            dispatch(productLoadStart())
-            const resolve = await axios.get('/table/equipment.json')
-            dispatch(productLoaded(resolve.data))
+            dispatch(experienceLoadStart())
+            const resolve = await axios.get('/experience.json')
+            dispatch(experienceLoaded(resolve.data.items))
         } catch (e) {
-            dispatch(productLoadError(e))
+            dispatch(experienceLoadError(e))
         }
     }
 }
 
-export const expirienceLoadStart = () => {
+export const experienceLoadStart = () => {
     return {
         type: EXP_START
     }
 }
 
-export const productLoaded = (newTable) => {
+export const experienceLoaded = (newTable) => {
     return {
         type: EXP_LOADED,
         payload: newTable
     }
 }
 
-export const productLoadError = (error) => {
+export const experienceLoadError = (error) => {
     return {
         type: EXP_ERROR,
         payload: error

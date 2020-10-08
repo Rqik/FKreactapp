@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './service.scss'
 import ServiceComponent from '../service-component'
-import {connect, useSelector} from 'react-redux'
+import { useSelector} from 'react-redux'
 
 const Service = () => {
 
-    const service = useSelector(({service})=> service)
+    const service = useSelector(({service})=> {return service.service})
     return (
         <div className='wrapper wrap-service'>
             <div className="service">
@@ -24,4 +24,4 @@ const Service = () => {
     )
 }
 
-export default (Service)
+export default Service

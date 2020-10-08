@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './table-component.scss'
+import {trRender} from '../../utils'
 //отвечает только за отрисовку данных таблиц
 
 // добавить функционал если данных нет
@@ -17,13 +18,11 @@ const TableComponent = ({tbody = {}, loading}) => {
             </tr>
             </thead>
             <tbody>
-            {loading ? tbody.map((el, idx) => <tr key={el + '__' + idx}>
-                <td>{el.name}</td>
-                <td>{el.type}</td>
-                <td>{el.price}</td>
-            </tr>) : <tr>
-                <td>Загрузка...</td>
-            </tr>
+            {loading
+                ? tbody.map(trRender)
+                : <tr>
+                    <td>Загрузка...</td>
+                </tr>
             }
 
             </tbody>

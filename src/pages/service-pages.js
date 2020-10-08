@@ -3,7 +3,7 @@ import ServiceComponent from '../components/service-component'
 import {useSelector} from 'react-redux'
 
 const ServicePages = () => {
-    const service = useSelector(({service}) => service)
+    const service = useSelector(({service}) => service.service)
 
     return (
         <div className='wrapper'>

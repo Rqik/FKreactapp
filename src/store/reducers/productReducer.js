@@ -1,68 +1,35 @@
-import {
-    EXP_LOADED,
-    PRODUCT_LOADED,
-    SERVICES_DATA_LOADED,
-    TABLE_LOADED
-} from '../action-types'
+import {PRODUCT_ERROR, PRODUCT_LOADED, PRODUCT_START} from '../action-types'
 
 const initialState = {
     product: [],
-    service: [],
-    table: {
-        equipment: [
-            {
-                name: '',
-                price: '',
-                type: ''
-
-            }]
-    },
-    experience: {
-        items: [{
-            company: '',
-            client: '',
-            name: '',
-            data: '',
-            version: '',
-            branch: ''
-        },],
-
-        expLoaded: false
-    },
-    isLoaded: false
+    isLoaded: false,
+    error: null
 }
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {
+        case PRODUCT_START:
+        return {
+            ...state,
+            isLoaded: false,
+            error: null
+        }
         case PRODUCT_LOADED :
-            console.log('product_loaded', action.payload)
             return {
                 ...state,
                 product: action.payload,
                 isLoaded: true
             }
-        case SERVICES_DATA_LOADED:
-            console.log('service_loaded', action.payload)
+        case PRODUCT_ERROR:
             return {
                 ...state,
-                service: action.payload,
                 isLoaded: true,
+                error: action.payload
             }
-        case TABLE_LOADED:
-            console.log('table_loaded', action.payload)
-            return {
-                ...state,
-                table: action.payload,
-                isLoaded: true,
 
-            }
-        case EXP_LOADED:
-            return {
-                ...state,
-                experience: {items: action.payload, expLoaded: true}
-            }
+
         default:
-            return statei
+            return state
     }
 }
 export default reducer;

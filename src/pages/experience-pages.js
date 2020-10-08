@@ -1,26 +1,25 @@
-import React, { useContext, useEffect } from 'react'
+import React, {useEffect} from 'react'
 import './expirience-pages.scss'
-import { useDispatch, useSelector } from 'react-redux'
-import { ProgramContext } from '../program-context'
-import { expLoaded } from '../store/actions'
+import {useDispatch, useSelector} from 'react-redux'
 import ContentLoader from 'react-content-loader'
-import { renderItems } from '../utils'
+import {renderItems} from '../utils'
+import {experienceDataLoadAction} from '../store/actions'
 
 
 // по клику переход на новую страницу с более подробной информацией о решении
 // тоже самое сделать для таблиц
 const ExperiencePages = () => {
 
-    const expContext = useContext(ProgramContext)
     const dispatch = useDispatch()
+
     useEffect(() => {
-        expContext.getProgram().then(res =>
-            dispatch(expLoaded(res.experience.items)))
-    })
+        dispatch(experienceDataLoadAction())
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
-    const load = useSelector(({ experience }) => experience.expLoaded)
+    const load = useSelector(({experience}) => experience.isLoaded)
 
-    const exp = useSelector(({ experience }) => experience.items)
+    const exp = useSelector(({experience}) => experience.items)
 
     return (
         <div className='wrapper'>
@@ -29,7 +28,7 @@ const ExperiencePages = () => {
                     <div className='filter-title'>Внедренные решения</div>
                     <div className='comp-search'>
                         <form action="">
-                            <input className='search-exp' type='text' />
+                            <input className='search-exp' type='text'/>
                             <button type={'submit'}>
                                 Поиск
                             </button>
@@ -41,16 +40,16 @@ const ExperiencePages = () => {
                         <legend>Внедрение по отраслям</legend>
 
                         <label className='category'><input
-                            type='checkbox' /> Отрасль </label>
+                            type='checkbox'/> Отрасль </label>
                         <label className='category'><input
-                            type='checkbox' /> Отрасль </label>
+                            type='checkbox'/> Отрасль </label>
                         <label className='category'><input
-                            type='checkbox' /> Отрасль </label>
+                            type='checkbox'/> Отрасль </label>
                         <button className='button button-push' type='submit'
-                            value='filtr'>Фильтр
+                                value='filtr'>Фильтр
                         </button>
                         <button className='button button-push_clear'
-                            type='reset' value='reset'> Сброс
+                                type='reset' value='reset'> Сброс
                         </button>
                     </fieldset>
                 </form>
@@ -65,9 +64,9 @@ const ExperiencePages = () => {
                             foregroundColor="#fdf1d2"
                         >
                             <rect x="0" y="50" rx="8" ry="8" width="100%"
-                                height="120" />
+                                  height="120"/>
                             <rect x="0" y="0" rx="8" ry="8" width="100%"
-                                height="34" />
+                                  height="34"/>
                         </ContentLoader>
                             <ContentLoader
                                 speed={2}
@@ -77,9 +76,9 @@ const ExperiencePages = () => {
                                 foregroundColor="#fdf1d2"
                             >
                                 <rect x="0" y="50" rx="8" ry="8" width="100%"
-                                    height="120" />
+                                      height="120"/>
                                 <rect x="0" y="0" rx="8" ry="8" width="100%"
-                                    height="34" />
+                                      height="34"/>
                             </ContentLoader></>)}
                 </div>
 

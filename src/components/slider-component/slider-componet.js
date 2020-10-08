@@ -1,6 +1,5 @@
 import React from 'react'
 import './slider-component.scss'
-import ContentLoader from 'react-content-loader'
 
 const SliderComponent = ({component}) => {
 

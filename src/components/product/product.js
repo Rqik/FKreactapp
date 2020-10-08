@@ -32,11 +32,9 @@ const params = {
 
 const Product = () => {
 
-    const {product} = useSelector(({product}) => {
-        return {product}
-    })
+    const product = useSelector(({product}) =>  product.product)
     // let isLoaded = false;
-    const isLoaded = useSelector((state) => state.isLoaded)
+    const isLoaded = useSelector(({product}) => product.isLoaded)
     return (
         <div className="wrapper wrapper-content sand">
             <div className="product">
@@ -79,7 +77,7 @@ const Product = () => {
                                         </div>
                                     </div>
 
-                                </SwiperSlide>)
+                                </SwiperSlide >)
                         }
                     </Swiper>
                     <div className='swiper-button-prev'/>

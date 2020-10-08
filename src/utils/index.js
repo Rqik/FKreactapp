@@ -1,12 +1,16 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 // let els = { element: 'text ele', index: '123'}
 // let {se, ke} = {se: els, ke: els.index}
 // console.log(se, ke)
+export const renderItems = (exp) => {
+    return (exp.map((el, ind) => <ItemExperience
+        key={'experience_comp' + el.company + ind}
+        el={el}/>))
+}
 
-const ItemExperience = ({element, index}) => {
-
-    let {el, ind} = {el: element, ind: index}
+const ItemExperience = ({el}) => {
     return (
         <div
             className={'exp-block'}>
@@ -28,13 +32,19 @@ const ItemExperience = ({element, index}) => {
     )
 }
 
-export const renderItems = (exp) => {
-    return (exp.map((el, ind) => <ItemExperience
-        key={'experience_comp' + el.company + ind}
-        element={el} index={ind}/>))
+
+export const trRender = (el, idx) => {
+    return (<tr key={el + '__' + idx}>
+        <td><Link className={'link-card'} el={el}
+                  to={`/equipment/${idx + el.type}`}>{el.name}</Link>
+        </td>
+        <td>{el.type}</td>
+        <td>{el.price}</td>
+    </tr>)
 }
 
 export function renderArray(content) {
-    return Array(4).fill(content)
-}
+    return Array(4).fill((el) => < React.Fragment
+        key={el + "sliderComponents"}>content</React.Fragment>)
+        }
 
