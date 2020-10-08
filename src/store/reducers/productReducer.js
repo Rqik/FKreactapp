@@ -6,7 +6,6 @@ import {
 } from '../action-types'
 
 const initialState = {
-
     product: [],
     service: [],
     table: {
@@ -63,7 +62,7 @@ const reducer = (state = initialState, action) => {
                 experience: {items: action.payload, expLoaded: true}
             }
         default:
-            return state
+            return statei
     }
 }
 export default reducer;
