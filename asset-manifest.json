@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/FKreactapp/static/css/main.50eca33c.chunk.css",
-    "main.js": "/FKreactapp/static/js/main.eb032250.chunk.js",
-    "main.js.map": "/FKreactapp/static/js/main.eb032250.chunk.js.map",
+    "main.css": "/FKreactapp/static/css/main.a933be97.chunk.css",
+    "main.js": "/FKreactapp/static/js/main.9746327c.chunk.js",
+    "main.js.map": "/FKreactapp/static/js/main.9746327c.chunk.js.map",
     "runtime-main.js": "/FKreactapp/static/js/runtime-main.db6f6549.js",
     "runtime-main.js.map": "/FKreactapp/static/js/runtime-main.db6f6549.js.map",
     "static/css/2.30998e96.chunk.css": "/FKreactapp/static/css/2.30998e96.chunk.css",
-    "static/js/2.93f16da6.chunk.js": "/FKreactapp/static/js/2.93f16da6.chunk.js",
-    "static/js/2.93f16da6.chunk.js.map": "/FKreactapp/static/js/2.93f16da6.chunk.js.map",
+    "static/js/2.df8c740a.chunk.js": "/FKreactapp/static/js/2.df8c740a.chunk.js",
+    "static/js/2.df8c740a.chunk.js.map": "/FKreactapp/static/js/2.df8c740a.chunk.js.map",
     "index.html": "/FKreactapp/index.html",
-    "precache-manifest.49342a0dc52397c902722f68ac739585.js": "/FKreactapp/precache-manifest.49342a0dc52397c902722f68ac739585.js",
+    "precache-manifest.d56eb6bd521905f415cc4ebf8b431c60.js": "/FKreactapp/precache-manifest.d56eb6bd521905f415cc4ebf8b431c60.js",
     "service-worker.js": "/FKreactapp/service-worker.js",
     "static/css/2.30998e96.chunk.css.map": "/FKreactapp/static/css/2.30998e96.chunk.css.map",
-    "static/css/main.50eca33c.chunk.css.map": "/FKreactapp/static/css/main.50eca33c.chunk.css.map",
-    "static/js/2.93f16da6.chunk.js.LICENSE.txt": "/FKreactapp/static/js/2.93f16da6.chunk.js.LICENSE.txt",
+    "static/css/main.a933be97.chunk.css.map": "/FKreactapp/static/css/main.a933be97.chunk.css.map",
+    "static/js/2.df8c740a.chunk.js.LICENSE.txt": "/FKreactapp/static/js/2.df8c740a.chunk.js.LICENSE.txt",
     "static/media/Macbook.png": "/FKreactapp/static/media/Macbook.cb99d66e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.db6f6549.js",
     "static/css/2.30998e96.chunk.css",
-    "static/js/2.93f16da6.chunk.js",
-    "static/css/main.50eca33c.chunk.css",
-    "static/js/main.eb032250.chunk.js"
+    "static/js/2.df8c740a.chunk.js",
+    "static/css/main.a933be97.chunk.css",
+    "static/js/main.9746327c.chunk.js"
   ]
 }
