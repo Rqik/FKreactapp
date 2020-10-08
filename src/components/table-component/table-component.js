@@ -1,51 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './table-component.scss'
+import {trRender} from '../../utils'
+//отвечает только за отрисовку данных таблиц
 
-const TableComponent = () =>{
+// добавить функционал если данных нет
+const TableComponent = ({tbody = {}, loading}) => {
+    const [thead] = useState(['Название', 'Тип', 'Цена'])
+    //data 2 елемента должен принимать название столбцов и строки с данными
 
-    return (
-            <table >
+    return (<>
+        <table>
+
             <thead className='header-table'>
             <tr>
-                <td>Название</td>
-                <td>Цена</td>
-                <td>Цена</td>
+                {thead.map((el, index) => <td
+                    key={'table' + el + index}>{el}</td>)}
             </tr>
-
             </thead>
-                <tbody>
+            <tbody>
+            {loading
+                ? tbody.map(trRender)
+                : <tr>
+                    <td>Загрузка...</td>
+                </tr>
+            }
 
-                <tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr>
-                <tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr><tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr>
-                <tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr><tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr>
-                <tr>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>1C:Бухгалтерия 8</td>
-                    <td>12300</td>
-                </tr>
-                </tbody>
-            </table>
-    )
+            </tbody>
+        </table>
+    </>)
 }
 
 export default TableComponent

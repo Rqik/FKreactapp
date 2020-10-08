@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import SVG from '../svg-img/svg'
 import './header.scss'
 
@@ -41,25 +41,25 @@ const Header = () => {
             </button>
             <ul className='header-nav'>
                 <li>
-                    <Link to='/company'>О компании</Link>
+                    <NavLink to='/company' activeClassName={'active'}>О компании</NavLink>
                 </li>
                 <li>
-                    <Link to='/service'>Услуги</Link>
+                    <NavLink to='/service' activeClassName={'active'}>Услуги</NavLink>
                 </li>
                 <li>
-                    <Link to='/equipment'>Торговое оборудование</Link>
+                    <NavLink to='/equipment' activeClassName={'active'}>Торговое оборудование</NavLink>
                 </li>
                 <li>
-                    <Link to='/experience'>Наш опыт</Link>
+                    <NavLink to='/experience' activeClassName={'active'}>Наш опыт</NavLink>
                 </li>
                 <li>
-                    <Link to='work'>Работа в компании</Link>
+                    <NavLink to='/work' activeClassName={'active'}>Работа в компании</NavLink>
                 </li>
                 <li>
-                    <Link to='contact'>Контакты</Link>
+                    <NavLink to='/contact' activeClassName={'active'}>Контакты</NavLink>
                 </li>
                 <li>
-                    <Link to='fresh'>1С Фреш</Link>
+                    <NavLink to='/fresh' activeClassName={'active'}>1С Фреш</NavLink>
                 </li>
                 <li>
                     <SVG onClick={() => {

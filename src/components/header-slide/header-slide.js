@@ -4,7 +4,7 @@ import './header-slide.scss'
 
 const HeaderSlide = () => {
     return (
-        <div className={'wrapper wrapper-content'}>
+        <div className={'wrapper wrapper__header-content'}>
             <h1 className={'header-slide-name'}>Автоматизация управления и учета
                 на базе программных продуктов «1С»</h1>
             <div className={'header-slide-text'}>
