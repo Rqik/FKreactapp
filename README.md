@@ -1,10 +1,6 @@
 #F KIN React App
-
-$ npm start 
-
+npm start 
 npm build 
-
-ЧТО ПРОИСХОДИТ 
 
 24.08 commit 
 
