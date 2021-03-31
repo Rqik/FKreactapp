@@ -1,6 +1,8 @@
-#F KIN React App
+#FKIN React App
 npm start 
 npm build 
+
+https://rqik.github.io/FKreactapp/
 
 24.08 commit 
 
